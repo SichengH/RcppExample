@@ -3,12 +3,15 @@
 using namespace Rcpp;
 
 // [[Rcpp::export]]
-List estimate(DataFrame data, double tol, int n, CharacterVector model_mode, int num_states) {
+//List estimate(DataFrame data, double tol, int n, CharacterVector model_mode, int num_states) {
+List example(int n){
 
     //CharacterVector x = CharacterVector::create( "foo", "HMTree" )  ;
     //NumericVector y   = NumericVector::create( 0.0, 1.0 ) ;
+    
     n=n_plus(n);
-    List z            = List::create(data,tol,n,model_mode,num_states) ;
+    
+    //List z            = List::create(data,tol,n,model_mode,num_states) ;
 
-    return z;
+    return n;
 }

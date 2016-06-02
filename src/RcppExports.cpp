@@ -6,7 +6,7 @@
 using namespace Rcpp;
 
 // estimate
-List estimate(DataFrame data, double tol, int n, CharacterVector model_mode, int num_states);
+//List estimate(DataFrame data, double tol, int n, CharacterVector model_mode, int num_states);
 RcppExport SEXP mypackage_estimate(SEXP dataSEXP, SEXP tolSEXP, SEXP nSEXP, SEXP model_modeSEXP, SEXP num_statesSEXP) {
 BEGIN_RCPP
     Rcpp::RObject __result;
